@@ -1,0 +1,17 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 5fr 260px;
+    margin-top: 60px;
+}
+
+.sidebar{
+    background: #f6fafc;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.mainPage{
+    background-color: #E2EEF3;
+}
+

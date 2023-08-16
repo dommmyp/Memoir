@@ -4,9 +4,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body{
   font-family: 'Open Sans', sans-serif;
-    background: #E2EEF3;
 }
 
 html{
+    background-color: #E2EEF3;
 }

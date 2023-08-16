@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar, Image, Popover } from "antd";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './css/index.css'
 import { AiOutlineSearch } from 'react-icons/ai';
 import { LuEdit } from 'react-icons/lu';
@@ -11,9 +11,24 @@ import { LuEdit } from 'react-icons/lu';
 function Index(user) {
     const [searchVal, setsearchVal] = useState("");
     const [visible, setvisible] = useState(false);
+    // keep track of previous scroll position
+    let prevScrollPos = window.pageYOffset;
 
+    window.addEventListener('scroll', function() {
+        // current scroll position
+        const currentScrollPos = window.pageYOffset;
 
+        if (prevScrollPos > currentScrollPos || currentScrollPos < 80) {
+            // user has scrolled up
+            document.querySelector('.navbar').classList.remove('hide');
+        } else {
+            // user has scrolled down
+            document.querySelector('.navbar').classList.add('hide');
+        }
 
+        // update previous scroll position
+        prevScrollPos = currentScrollPos;
+    });
 
     const Title = () => {
         return (

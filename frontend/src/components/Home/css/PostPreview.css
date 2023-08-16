@@ -1,0 +1,13 @@
+
+.postPreview{
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    height: 240px;
+}
+.postPreview-body{
+    height: 55%;
+}
+
+.postPreview > h1{
+    font-size: 28px;
+}

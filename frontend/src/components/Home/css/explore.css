@@ -1,0 +1,17 @@
+.explore-wrapper{
+    margin: 160px auto;
+    width: 80%;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 50px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px;
+    height: 800px;
+}
+
+.explore-header{
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.explore-header-item{
+    padding: 10px 15px;
+    font-size: 20px;
+}

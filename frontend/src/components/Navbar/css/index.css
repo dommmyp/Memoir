@@ -1,8 +1,16 @@
 .navbar{
     background: #f6fafc;
+    border-bottom: 1px solid #ccc; 
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 10;
 }
-
-
+.navbar.hide{
+visibility: hidden;
+}
 .navbar-title{
 font-family: 'Playfair Display', serif;
 font-weight: 700;
