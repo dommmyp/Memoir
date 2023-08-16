@@ -2,12 +2,18 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import PrimaryPost from './PrimaryPost';
 import PostPreview from './PostPreview';
-import ExploreHeader from './ExploreHeader';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import './css/animations.css';
 import './css/explore.css';
+import { BsGear } from 'react-icons/bs';
 
 function MainPage() {
+    const [activeTopicIndex, setActiveTopicIndex] = useState(0);
+
+
+    const topicHeaders = [{ name: "following", type: "primary", id: 0 }, { name: "For you", type: "primary", id: 1 }, { name: "Science", type: "topic", id: 234 }, { name: "geoff bffff", type: "person", id: "Sw45yw5fdfgt" }, { name: "geoff bffff", type: "person", id: "Sw45yw5fdfgt" }, { name: "geoff bffff", type: "person", id: "Sw45yw5fdfgt" }, { name: "geoff bffff", type: "person", id: "Sw45yw5fdfgt" }];
+
+
     const posts = [
         {
             title: "Post 1",
@@ -56,7 +62,16 @@ function MainPage() {
                     <MdOutlineKeyboardArrowRight onClick={() => handleArrow(1)} />
                 </div >
                 <div className="explore-wrapper">
-                    <ExploreHeader />
+                    <div className="explore-header">
+                        <div className="explore-topic-wrapper">
+                            {topicHeaders && topicHeaders.map((topic, index) => {
+                                return <div key={index} className={activeTopicIndex === index ? "explore-header-item active" : "explore-header-item"} onClick={() => setActiveTopicIndex(index)}>{topic.name}</div>
+                            })}
+                        </div>
+                        <div className="explore-header-item explore-header-item-gear">
+                            <BsGear className="" />
+                        </div>
+                    </div>
                     <div className="explore-body">
                         {posts && posts.map((post, index) => {
                             return <PostPreview post={post} key={index} index={index} active={activeIndex} />

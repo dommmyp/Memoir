@@ -9,9 +9,24 @@
 .explore-header{
     display: flex;
     border-bottom: 1px solid #333;
+    position: relative;
+}
+.explore-topic-wrapper{
+    display: flex;
+    overflow-x: scroll;
+    max-width: calc(100% - 50px);
 }
 
 .explore-header-item{
     padding: 10px 15px;
     font-size: 20px;
+    white-space: nowrap;
+
+}
+.explore-header-item.active{
+    background: #ddd;
+}
+.explore-header-gear{
+    float: right;
+
 }

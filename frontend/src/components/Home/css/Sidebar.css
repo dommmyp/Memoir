@@ -1,0 +1,45 @@
+
+.sidebar{
+    background: #f6fafc;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-item-header{
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+}
+.recommended-user{
+    display: flex;
+    margin: 5px;
+}
+.recommended-user-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.recommended-user-img img{
+    max-width: 100%;
+}
+.recommended-user-name{
+    height: 45px;
+    line-height: 45px;
+margin-left: 10px;
+}
+.sidebar-item-body{
+    margin: 10px;
+}
+.sidebar-item{
+    margin: 10px;
+    border-bottom: 1px solid #bbb;
+}
+.recommended-topic{
+    background: #ddd;
+display: inline-block;
+margin: 5px;
+padding: 5px 10px;
+border-radius: 20px;
+}
