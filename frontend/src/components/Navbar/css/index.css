@@ -1,0 +1,64 @@
+.navbar{
+    background: #f6fafc;
+}
+
+
+.navbar-title{
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+text-decoration: none;
+color: #000000;
+font-size: 28px;
+}
+
+.navbar-search{
+     background: #ddd;
+     border-radius: 20px;
+     height: 40px;
+     display: flex;
+}
+
+.navbar-search-input{
+    line-height: 40px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.navbar-search-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-search-link{
+    padding-left: 10px;
+    margin-top: -3px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-decoration: none;
+    color: #000000;
+    font-size: 28px;
+}
+
+.create-post-link{
+    display: flex;
+    color: black;
+    gap: 5px;
+    font-size: 18px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.create-post-link svg{
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
