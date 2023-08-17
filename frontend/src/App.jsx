@@ -6,7 +6,7 @@ import Home from './components/Home'
 import CreatePost from './components/CreatePost'
 import SearchResults from './components/SearchResults'
 import Navbar from './components/Navbar'
-
+import SubmitPost from './components/SubmitPost'
 
 
 const user = {
@@ -33,6 +33,14 @@ function App() {
                     <Route
                         path="/"
                         element={<Home user={user} />}
+                    />
+                    <Route
+                        path="/create-post"
+                        element={<CreatePost user={user} />}
+                    />
+                    <Route
+                        path="/submit-post"
+                        element={<SubmitPost user={user} />}
                     />
                 </Routes>
 

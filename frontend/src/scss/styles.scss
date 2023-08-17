@@ -1,6 +1,39 @@
-@import "bootstrap/scss/bootstrap";
-
+// @import "bootstrap/scss/bootstrap";
+body{
+    font-family: unset;
+}
 
 .input-group{
     width: unset;
+}
+
+.container-fluid{
+        display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+        --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+img, svg {
+    vertical-align: middle;
 }

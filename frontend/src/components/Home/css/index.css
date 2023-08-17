@@ -1,7 +1,6 @@
 .main-container{
     display: grid;
     grid-template-columns: 5fr 260px;
-    margin-top: 60px;
 }
 
 
